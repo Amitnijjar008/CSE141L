@@ -1,0 +1,866 @@
+Analysis & Synthesis report for reg_file_wrap
+Sun Jan 17 22:52:42 2016
+Quartus II 64-Bit Version 15.0.0 Build 145 04/22/2016 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |reg_file_wrap
+ 11. Parameter Settings for User Entity Instance: reg_file:rf
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Jan 17 22:52:42 2016      ;
+; Quartus II 64-Bit Version          ; 15.0.0 Build 145 04/22/2016 SJ Web Edition ;
+; Revision Name                      ; reg_file_wrap                              ;
+; Top-level Entity Name              ; reg_file_wrap                              ;
+; Family                             ; Cyclone IV E                               ;
+; Total logic elements               ; 473                                        ;
+;     Total combinational functions  ; 150                                        ;
+;     Dedicated logic registers      ; 387                                        ;
+; Total registers                    ; 387                                        ;
+; Total pins                         ; 866                                        ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE40F29C6       ;                    ;
+; Top-level entity name                                                      ; reg_file_wrap      ; reg_file_wrap      ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                   ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                         ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
+; reg_file_wrap.sv                 ; yes             ; User SystemVerilog HDL File        ; C:/Users/Daniel/Documents/CSE141L/lab1/reg_file/src/reg_file_wrap.sv ;         ;
+; reg_file.sv                      ; yes             ; Auto-Found SystemVerilog HDL File  ; C:/Users/Daniel/Documents/CSE141L/lab1/reg_file/src/reg_file.sv      ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 473       ;
+;                                             ;           ;
+; Total combinational functions               ; 150       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 85        ;
+;     -- 3 input functions                    ; 0         ;
+;     -- <=2 input functions                  ; 65        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 150       ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 387       ;
+;     -- Dedicated logic registers            ; 387       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 866       ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 387       ;
+; Total fan-out                               ; 2206      ;
+; Average fan-out                             ; 0.97      ;
++---------------------------------------------+-----------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
+; |reg_file_wrap             ; 150 (0)           ; 387 (355)    ; 0           ; 0            ; 0       ; 0         ; 866  ; 0            ; |reg_file_wrap             ; work         ;
+;    |reg_file:rf|           ; 150 (150)         ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reg_file_wrap|reg_file:rf ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                   ;
++----------------------------------------+---------------------------------------------+
+; Register name                          ; Reason for Removal                          ;
++----------------------------------------+---------------------------------------------+
+; reg_file:rf|RF~32                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~33                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~34                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~35                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~36                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~37                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~38                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~39                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~40                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~41                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~42                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~43                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~44                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~45                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~46                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~47                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~48                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~49                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~50                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~51                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~52                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~53                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~54                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~55                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~56                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~57                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~58                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~59                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~60                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~61                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~62                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|RF~63                      ; Stuck at GND due to stuck port clock_enable ;
+; Total Number of Removed Registers = 32 ;                                             ;
++----------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 387   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 32    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |reg_file_wrap ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; addr_width_p   ; 256   ; Signed Integer                                       ;
+; data_width_p   ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg_file:rf ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; addr_width_p   ; 256   ; Signed Integer                  ;
+; data_width_p   ; 32    ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 866                         ;
+; cycloneiii_ff         ; 387                         ;
+;     ENA               ; 32                          ;
+;     plain             ; 355                         ;
+; cycloneiii_lcell_comb ; 150                         ;
+;     normal            ; 150                         ;
+;         2 data inputs ; 65                          ;
+;         4 data inputs ; 85                          ;
+;                       ;                             ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 1.88                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 15.0.0 Build 145 04/22/2016 SJ Web Edition
+    Info: Processing started: Sun Jan 17 22:52:05 2016
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off reg_file_wrap -c reg_file_wrap
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file reg_file_wrap.sv
+    Info (12023): Found entity 1: reg_file_wrap
+Info (12127): Elaborating entity "reg_file_wrap" for the top level hierarchy
+Warning (12125): Using design file reg_file.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: reg_file
+Warning (10222): Verilog HDL Parameter Declaration warning at reg_file.sv(18): Parameter Declaration in module "reg_file" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Info (12128): Elaborating entity "reg_file" for hierarchy "reg_file:rf"
+Warning (10259): Verilog HDL error at reg_file.sv(18): constant value overflow
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276004): RAM logic "reg_file:rf|RF" is uninferred due to inappropriate RAM size
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 510 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "rs_addr_i[1]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[2]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[3]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[4]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[5]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[6]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[7]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[8]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[9]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[10]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[11]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[12]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[13]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[14]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[15]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[16]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[17]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[18]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[19]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[20]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[21]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[22]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[23]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[24]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[25]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[26]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[27]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[28]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[29]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[30]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[31]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[32]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[33]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[34]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[35]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[36]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[37]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[38]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[39]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[40]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[41]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[42]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[43]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[44]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[45]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[46]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[47]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[48]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[49]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[50]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[51]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[52]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[53]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[54]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[55]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[56]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[57]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[58]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[59]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[60]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[61]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[62]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[63]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[64]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[65]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[66]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[67]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[68]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[69]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[70]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[71]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[72]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[73]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[74]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[75]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[76]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[77]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[78]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[79]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[80]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[81]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[82]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[83]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[84]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[85]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[86]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[87]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[88]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[89]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[90]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[91]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[92]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[93]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[94]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[95]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[96]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[97]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[98]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[99]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[100]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[101]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[102]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[103]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[104]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[105]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[106]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[107]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[108]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[109]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[110]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[111]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[112]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[113]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[114]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[115]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[116]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[117]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[118]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[119]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[120]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[121]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[122]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[123]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[124]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[125]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[126]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[127]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[128]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[129]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[130]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[131]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[132]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[133]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[134]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[135]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[136]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[137]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[138]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[139]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[140]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[141]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[142]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[143]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[144]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[145]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[146]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[147]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[148]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[149]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[150]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[151]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[152]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[153]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[154]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[155]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[156]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[157]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[158]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[159]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[160]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[161]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[162]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[163]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[164]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[165]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[166]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[167]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[168]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[169]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[170]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[171]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[172]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[173]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[174]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[175]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[176]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[177]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[178]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[179]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[180]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[181]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[182]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[183]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[184]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[185]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[186]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[187]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[188]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[189]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[190]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[191]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[192]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[193]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[194]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[195]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[196]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[197]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[198]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[199]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[200]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[201]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[202]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[203]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[204]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[205]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[206]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[207]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[208]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[209]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[210]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[211]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[212]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[213]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[214]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[215]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[216]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[217]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[218]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[219]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[220]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[221]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[222]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[223]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[224]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[225]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[226]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[227]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[228]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[229]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[230]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[231]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[232]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[233]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[234]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[235]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[236]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[237]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[238]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[239]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[240]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[241]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[242]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[243]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[244]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[245]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[246]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[247]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[248]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[249]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[250]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[251]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[252]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[253]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[254]"
+    Warning (15610): No output dependent on input pin "rs_addr_i[255]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[1]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[2]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[3]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[4]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[5]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[6]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[7]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[8]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[9]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[10]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[11]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[12]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[13]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[14]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[15]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[16]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[17]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[18]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[19]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[20]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[21]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[22]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[23]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[24]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[25]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[26]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[27]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[28]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[29]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[30]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[31]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[32]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[33]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[34]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[35]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[36]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[37]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[38]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[39]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[40]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[41]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[42]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[43]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[44]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[45]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[46]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[47]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[48]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[49]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[50]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[51]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[52]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[53]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[54]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[55]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[56]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[57]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[58]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[59]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[60]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[61]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[62]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[63]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[64]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[65]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[66]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[67]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[68]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[69]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[70]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[71]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[72]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[73]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[74]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[75]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[76]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[77]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[78]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[79]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[80]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[81]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[82]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[83]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[84]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[85]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[86]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[87]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[88]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[89]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[90]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[91]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[92]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[93]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[94]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[95]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[96]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[97]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[98]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[99]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[100]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[101]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[102]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[103]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[104]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[105]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[106]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[107]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[108]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[109]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[110]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[111]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[112]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[113]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[114]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[115]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[116]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[117]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[118]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[119]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[120]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[121]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[122]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[123]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[124]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[125]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[126]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[127]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[128]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[129]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[130]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[131]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[132]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[133]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[134]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[135]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[136]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[137]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[138]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[139]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[140]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[141]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[142]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[143]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[144]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[145]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[146]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[147]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[148]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[149]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[150]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[151]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[152]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[153]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[154]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[155]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[156]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[157]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[158]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[159]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[160]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[161]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[162]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[163]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[164]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[165]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[166]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[167]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[168]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[169]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[170]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[171]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[172]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[173]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[174]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[175]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[176]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[177]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[178]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[179]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[180]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[181]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[182]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[183]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[184]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[185]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[186]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[187]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[188]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[189]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[190]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[191]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[192]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[193]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[194]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[195]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[196]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[197]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[198]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[199]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[200]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[201]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[202]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[203]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[204]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[205]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[206]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[207]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[208]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[209]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[210]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[211]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[212]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[213]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[214]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[215]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[216]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[217]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[218]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[219]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[220]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[221]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[222]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[223]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[224]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[225]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[226]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[227]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[228]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[229]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[230]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[231]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[232]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[233]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[234]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[235]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[236]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[237]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[238]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[239]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[240]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[241]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[242]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[243]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[244]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[245]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[246]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[247]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[248]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[249]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[250]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[251]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[252]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[253]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[254]"
+    Warning (15610): No output dependent on input pin "rd_addr_i[255]"
+Info (21057): Implemented 1339 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 802 input pins
+    Info (21059): Implemented 64 output pins
+    Info (21061): Implemented 473 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 515 warnings
+    Info: Peak virtual memory: 691 megabytes
+    Info: Processing ended: Sun Jan 17 22:52:42 2016
+    Info: Elapsed time: 00:00:37
+    Info: Total CPU time (on all processors): 00:00:58
+
+

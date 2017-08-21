@@ -1,0 +1,56 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Amit/Desktop/Nijjar/lab1/adder/src/tb
+vadder
+Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z2 !s110 1460674249
+!i10b 1
+!s100 lH]mUaOS>289m0Ribb6G;3
+IC8c4Q4ED?PW5=XTI]Ea8h1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 adder_sv_unit
+S1
+R0
+w1460674241
+8../adder.sv
+F../adder.sv
+L0 7
+Z4 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z5 !s108 1460674249.000000
+!s107 ../adder.sv|
+!s90 -reportprogress|300|-work|work|../adder.sv|
+!i113 1
+Z6 o-work work
+vadder_tb
+R1
+R2
+!i10b 1
+!s100 b1z13b1feYQa@G<hBZXmi2
+IDff<ClG<lnYQz;WjR_^n=3
+R3
+!s105 adder_tb_sv_unit
+S1
+R0
+w1459158062
+8adder_tb.sv
+Fadder_tb.sv
+L0 15
+R4
+r1
+!s85 0
+31
+R5
+!s107 adder_tb.sv|
+!s90 -reportprogress|300|-work|work|adder_tb.sv|
+!i113 1
+R6

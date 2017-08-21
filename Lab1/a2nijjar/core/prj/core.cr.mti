@@ -1,0 +1,81 @@
+Z:/My_Projects/CSE141L/core/lab1/reg_file.sv {1 {vlog -work work -sv Z:/My_Projects/CSE141L/core/lab1/reg_file.sv
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling module reg_file
+
+Top level modules:
+	reg_file
+
+} {} {}} Z:/My_Projects/CSE141L/core/lab1/instr_mem.sv {1 {vlog -work work -sv Z:/My_Projects/CSE141L/core/lab1/instr_mem.sv
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling package instr_mem_sv_unit
+-- Compiling module instr_mem
+
+Top level modules:
+	instr_mem
+
+} {} {}} Z:/My_Projects/CSE141L/core/lab1/net_packet_logger_s.sv {1 {vlog -work work -sv Z:/My_Projects/CSE141L/core/lab1/net_packet_logger_s.sv
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling package net_packet_logger_s_sv_unit
+-- Compiling module network_packet_s_logger
+
+Top level modules:
+	network_packet_s_logger
+
+} {} {}} Z:/My_Projects/CSE141L/core/lab1/alu.sv {1 {vlog -work work -sv Z:/My_Projects/CSE141L/core/lab1/alu.sv
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling package alu_sv_unit
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} Z:/My_Projects/CSE141L/core/lab1/core_flattened.sv {1 {vlog -work work -sv Z:/My_Projects/CSE141L/core/lab1/core_flattened.sv
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling package core_flattened_sv_unit
+-- Compiling module core_flattened
+
+Top level modules:
+	core_flattened
+
+} {} {}} Z:/My_Projects/CSE141L/core/lab1/data_mem.sv {1 {vlog -work work -sv Z:/My_Projects/CSE141L/core/lab1/data_mem.sv
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling package data_mem_sv_unit
+-- Compiling module data_mem
+
+Top level modules:
+	data_mem
+
+} {} {}} Z:/My_Projects/CSE141L/core/lab1/core.sv {1 {vlog -work work -sv Z:/My_Projects/CSE141L/core/lab1/core.sv
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling package core_sv_unit
+-- Compiling module core
+
+Top level modules:
+	core
+
+} {} {}} Z:/My_Projects/CSE141L/core/lab1/cl_decode.sv {1 {vlog -work work -sv Z:/My_Projects/CSE141L/core/lab1/cl_decode.sv
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling package cl_decode_sv_unit
+-- Compiling module cl_decode
+
+Top level modules:
+	cl_decode
+
+} {} {}} Z:/My_Projects/CSE141L/core/lab1/cl_state_machine.sv {1 {vlog -work work -sv Z:/My_Projects/CSE141L/core/lab1/cl_state_machine.sv
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+-- Compiling package cl_state_machine_sv_unit
+-- Compiling module cl_state_machine
+
+Top level modules:
+	cl_state_machine
+
+} {} {}} Z:/My_Projects/CSE141L/core/lab1/definitions.sv {1 {vlog -work work -sv Z:/My_Projects/CSE141L/core/lab1/definitions.sv
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+
+Top level modules:
+	--none--
+
+} {} {}} Z:/My_Projects/CSE141L/core/lab1/disassemble.sv {1 {vlog -work work -sv Z:/My_Projects/CSE141L/core/lab1/disassemble.sv
+Model Technology ModelSim ALTERA vlog 10.1e Compiler 2013.06 Jun 12 2013
+
+} {} {}}

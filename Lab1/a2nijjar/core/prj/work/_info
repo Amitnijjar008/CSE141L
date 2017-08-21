@@ -1,0 +1,463 @@
+m255
+K3
+13
+cModel Technology
+Z0 dZ:\My_Projects\CSE141L\core\lab1
+valu
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+Z2 DXx4 work 11 alu_sv_unit 0 22 QO8QgTK=zMJRMc6QZ;1:33
+Z3 VI7lk`SQ8Za@A6?2c<@gWI2
+r1
+31
+Z4 IKVU4:T5j6h[clddU>CYjo3
+S1
+Z5 dZ:\My_Projects\CSE141L\core\lab1
+Z6 w1444809642
+Z7 8Z:/My_Projects/CSE141L/core/lab1/alu.sv
+Z8 FZ:/My_Projects/CSE141L/core/lab1/alu.sv
+L0 4
+Z9 OV;L;10.1e;51
+Z10 !s108 1444809936.932000
+Z11 !s107 definitions.sv|Z:/My_Projects/CSE141L/core/lab1/alu.sv|
+Z12 !s90 -reportprogress|300|-work|work|-sv|Z:/My_Projects/CSE141L/core/lab1/alu.sv|
+Z13 o-work work -sv -O0
+Z14 !s100 YiUJfRCF`ngmn8EXBDUJl1
+Z15 !s105 alu_sv_unit
+!s85 0
+!i10b 1
+!s101 -O0
+Xalu_sv_unit
+R1
+Z16 VQO8QgTK=zMJRMc6QZ;1:33
+r1
+31
+Z17 IQO8QgTK=zMJRMc6QZ;1:33
+S1
+R5
+R6
+R7
+R8
+Z18 Fdefinitions.sv
+L1 51
+R9
+R10
+R11
+R12
+R13
+Z19 !s100 zHmK[L@1Je5L:H3d8G6>T1
+!s85 0
+!i10b 1
+!i103 1
+!s101 -O0
+vcl_decode
+R1
+Z20 DXx4 work 17 cl_decode_sv_unit 0 22 jazGAZPeUSR=9KmZJKiAZ2
+Z21 Vj2XdPkIgM0O^Hn@`n`AWZ1
+r1
+31
+Z22 IZIJ:<ZmnK48oDoMX=UHTi2
+S1
+R5
+R6
+Z23 8Z:/My_Projects/CSE141L/core/lab1/cl_decode.sv
+Z24 FZ:/My_Projects/CSE141L/core/lab1/cl_decode.sv
+L0 4
+R9
+Z25 !s108 1444809937.104000
+Z26 !s107 definitions.sv|Z:/My_Projects/CSE141L/core/lab1/cl_decode.sv|
+Z27 !s90 -reportprogress|300|-work|work|-sv|Z:/My_Projects/CSE141L/core/lab1/cl_decode.sv|
+R13
+Z28 !s100 D1dDZfW>Ah0^;YZ557oXf1
+Z29 !s105 cl_decode_sv_unit
+!s85 0
+!i10b 1
+!s101 -O0
+Xcl_decode_sv_unit
+R1
+Z30 VjazGAZPeUSR=9KmZJKiAZ2
+r1
+31
+Z31 IjazGAZPeUSR=9KmZJKiAZ2
+S1
+R5
+R6
+R23
+R24
+R18
+L1 51
+R9
+R25
+R26
+R27
+R13
+Z32 !s100 ;HF^;QI3^^2k0`6IZm7hj2
+!s85 0
+!i10b 1
+!i103 1
+!s101 -O0
+vcl_state_machine
+R1
+Z33 DXx4 work 24 cl_state_machine_sv_unit 0 22 3J2C7I`NiiSH<_[Y[VOh=3
+Z34 V_HO6g@<O=0IE^>?5Z5=h`1
+r1
+31
+Z35 IajbPo[j8z93>IG`UgSzWG1
+S1
+R5
+R6
+Z36 8Z:/My_Projects/CSE141L/core/lab1/cl_state_machine.sv
+Z37 FZ:/My_Projects/CSE141L/core/lab1/cl_state_machine.sv
+L0 3
+R9
+Z38 !s108 1444809937.245000
+Z39 !s107 definitions.sv|Z:/My_Projects/CSE141L/core/lab1/cl_state_machine.sv|
+Z40 !s90 -reportprogress|300|-work|work|-sv|Z:/My_Projects/CSE141L/core/lab1/cl_state_machine.sv|
+R13
+Z41 !s100 eKc]U98l=8QCh[5gf:ncR2
+Z42 !s105 cl_state_machine_sv_unit
+!s85 0
+!i10b 1
+!s101 -O0
+Xcl_state_machine_sv_unit
+R1
+Z43 V3J2C7I`NiiSH<_[Y[VOh=3
+r1
+31
+Z44 I3J2C7I`NiiSH<_[Y[VOh=3
+S1
+R5
+R6
+R36
+R37
+R18
+L1 51
+R9
+R38
+R39
+R40
+R13
+Z45 !s100 G8>fZKk7<`_c2=^X_=T0m3
+!s85 0
+!i10b 1
+!i103 1
+!s101 -O0
+vcore
+R1
+Z46 DXx4 work 12 core_sv_unit 0 22 ^?^=nC7T1zT9lCjKaDUEU0
+Z47 V8g;U8en<PLBg@@AL4CL>f3
+r1
+31
+Z48 I?lacc?mj;MY]BF9_2VKg71
+S1
+R5
+R6
+Z49 8Z:/My_Projects/CSE141L/core/lab1/core.sv
+Z50 FZ:/My_Projects/CSE141L/core/lab1/core.sv
+L0 3
+R9
+Z51 !s108 1444809937.401000
+Z52 !s107 definitions.sv|Z:/My_Projects/CSE141L/core/lab1/core.sv|
+Z53 !s90 -reportprogress|300|-work|work|-sv|Z:/My_Projects/CSE141L/core/lab1/core.sv|
+R13
+Z54 !s100 jX@7ilgU8RJW;NncPSUzT1
+Z55 !s105 core_sv_unit
+!s85 0
+!i10b 1
+!s101 -O0
+vcore_flattened
+R1
+Z56 DXx4 work 22 core_flattened_sv_unit 0 22 F=bi[^?<k>jE]MGHGTfZa3
+Z57 V2R0=69R;zAfBGzKl1Q]2X0
+r1
+31
+Z58 IzmiNcLiJE8NDXHOQ;<:H^3
+S1
+R5
+R6
+Z59 8Z:/My_Projects/CSE141L/core/lab1/core_flattened.sv
+Z60 FZ:/My_Projects/CSE141L/core/lab1/core_flattened.sv
+L0 4
+R9
+Z61 !s108 1444809937.558000
+Z62 !s107 definitions.sv|Z:/My_Projects/CSE141L/core/lab1/core_flattened.sv|
+Z63 !s90 -reportprogress|300|-work|work|-sv|Z:/My_Projects/CSE141L/core/lab1/core_flattened.sv|
+R13
+Z64 !s100 AKYz`B2[U96D_JPQjiFTg1
+Z65 !s105 core_flattened_sv_unit
+!s85 0
+!i10b 1
+!s101 -O0
+Xcore_flattened_sv_unit
+R1
+Z66 VF=bi[^?<k>jE]MGHGTfZa3
+r1
+31
+Z67 IF=bi[^?<k>jE]MGHGTfZa3
+S1
+R5
+R6
+R59
+R60
+R18
+L1 51
+R9
+R61
+R62
+R63
+R13
+Z68 !s100 5jYCe_?e7RAXSIonHQD7[1
+!s85 0
+!i10b 1
+!i103 1
+!s101 -O0
+Xcore_sv_unit
+R1
+Z69 V^?^=nC7T1zT9lCjKaDUEU0
+r1
+31
+Z70 I^?^=nC7T1zT9lCjKaDUEU0
+S1
+R5
+R6
+R49
+R50
+R18
+L1 51
+R9
+R51
+R52
+R53
+R13
+Z71 !s100 [9VO8JhZiazW<ad3]6m9j2
+!s85 0
+!i10b 1
+!i103 1
+!s101 -O0
+vcore_tb
+R1
+Z72 DXx4 work 15 core_tb_sv_unit 0 22 _n1;Zf10KAhzM9<7VCOU41
+Z73 VlN3iUPNV?OYGNgj@DJaoE2
+r1
+!s85 0
+31
+!i10b 1
+!s100 l[bXj1O48NE^3MDA4]k>13
+I7eS`4JeQTGIXI;gC;:B`c0
+Z74 !s105 core_tb_sv_unit
+S1
+R5
+Z75 w1444811585
+Z76 8Z:/My_Projects/CSE141L/core/lab1/core_tb.sv
+Z77 FZ:/My_Projects/CSE141L/core/lab1/core_tb.sv
+L0 17
+R9
+Z78 !s108 1444811594.047000
+Z79 !s107 definitions.sv|Z:/My_Projects/CSE141L/core/lab1/core_tb.sv|
+Z80 !s90 -reportprogress|300|-work|work|-sv|-O0|Z:/My_Projects/CSE141L/core/lab1/core_tb.sv|
+!s101 -O0
+R13
+Xcore_tb_sv_unit
+R1
+Z81 V_n1;Zf10KAhzM9<7VCOU41
+r1
+!s85 0
+31
+!i10b 1
+Z82 !s100 @DeSKjI3`b;2jee3RZZWz2
+Z83 I_n1;Zf10KAhzM9<7VCOU41
+!i103 1
+S1
+R5
+R75
+R76
+R77
+R18
+L1 51
+R9
+R78
+R79
+R80
+!s101 -O0
+R13
+vdata_mem
+R1
+Z84 DXx4 work 16 data_mem_sv_unit 0 22 bKC<KOlHkZYZ7B?h7X4V?3
+Z85 VJTgBNdnj9c=zg80[gUozo3
+r1
+31
+Z86 I?Z54n^PJ_b`GUeAkP[PAe1
+S1
+R5
+R6
+Z87 8Z:/My_Projects/CSE141L/core/lab1/data_mem.sv
+Z88 FZ:/My_Projects/CSE141L/core/lab1/data_mem.sv
+L0 11
+R9
+Z89 !s108 1444809937.855000
+Z90 !s107 definitions.sv|Z:/My_Projects/CSE141L/core/lab1/data_mem.sv|
+Z91 !s90 -reportprogress|300|-work|work|-sv|Z:/My_Projects/CSE141L/core/lab1/data_mem.sv|
+R13
+Z92 !s100 ?`eCLJXji5`W^k2Pa4[OC2
+Z93 !s105 data_mem_sv_unit
+!s85 0
+!i10b 1
+!s101 -O0
+Xdata_mem_sv_unit
+R1
+Z94 VbKC<KOlHkZYZ7B?h7X4V?3
+r1
+31
+Z95 IbKC<KOlHkZYZ7B?h7X4V?3
+S1
+R5
+R6
+R87
+R88
+R18
+L1 51
+R9
+R89
+R90
+R91
+R13
+Z96 !s100 NdZ<D^EFUP6DlS;T93RA;2
+!s85 0
+!i10b 1
+!i103 1
+!s101 -O0
+Xdefinitions_sv_unit
+R1
+Z97 IkAQU[Hamd2AG[mC?VPa>93
+Z98 VkAQU[Hamd2AG[mC?VPa>93
+S1
+R5
+R6
+Z99 8Z:/My_Projects/CSE141L/core/lab1/definitions.sv
+Z100 FZ:/My_Projects/CSE141L/core/lab1/definitions.sv
+L0 51
+R9
+r1
+31
+R13
+Z101 !s100 SMWKGelTa60hbnl=W[RA^2
+Z102 !s108 1444809937.995000
+Z103 !s107 Z:/My_Projects/CSE141L/core/lab1/definitions.sv|
+Z104 !s90 -reportprogress|300|-work|work|-sv|Z:/My_Projects/CSE141L/core/lab1/definitions.sv|
+!i10b 1
+!i103 1
+!s85 0
+!s101 -O0
+vinstr_mem
+R1
+Z105 DXx4 work 17 instr_mem_sv_unit 0 22 dH`PLd^@^KSa7UzbReG@B2
+Z106 VFbL0l?mC^hD9I>mmSWaGQ0
+r1
+31
+Z107 IhK?cBSS3c<?hNJbJPon483
+S1
+R5
+R6
+Z108 8Z:/My_Projects/CSE141L/core/lab1/instr_mem.sv
+Z109 FZ:/My_Projects/CSE141L/core/lab1/instr_mem.sv
+L0 5
+R9
+Z110 !s108 1444809938.167000
+Z111 !s107 definitions.sv|Z:/My_Projects/CSE141L/core/lab1/instr_mem.sv|
+Z112 !s90 -reportprogress|300|-work|work|-sv|Z:/My_Projects/CSE141L/core/lab1/instr_mem.sv|
+R13
+Z113 !s100 E;NVXg^gg@A7]7PJY?j_U2
+Z114 !s105 instr_mem_sv_unit
+!s85 0
+!i10b 1
+!s101 -O0
+Xinstr_mem_sv_unit
+R1
+Z115 VdH`PLd^@^KSa7UzbReG@B2
+r1
+31
+Z116 IdH`PLd^@^KSa7UzbReG@B2
+S1
+R5
+R6
+R108
+R109
+R18
+L1 51
+R9
+R110
+R111
+R112
+R13
+Z117 !s100 U0md3o`?BYF6jc7RJ9F0l2
+!s85 0
+!i10b 1
+!i103 1
+!s101 -O0
+Xnet_packet_logger_s_sv_unit
+R1
+Z118 V>@fP^Y0ONG[n<cPJaClQ41
+r1
+31
+Z119 I>@fP^Y0ONG[n<cPJaClQ41
+S1
+R5
+R6
+Z120 8Z:/My_Projects/CSE141L/core/lab1/net_packet_logger_s.sv
+Z121 FZ:/My_Projects/CSE141L/core/lab1/net_packet_logger_s.sv
+R18
+L1 51
+R9
+Z122 !s108 1444809938.307000
+Z123 !s107 definitions.sv|Z:/My_Projects/CSE141L/core/lab1/net_packet_logger_s.sv|
+Z124 !s90 -reportprogress|300|-work|work|-sv|Z:/My_Projects/CSE141L/core/lab1/net_packet_logger_s.sv|
+R13
+Z125 !s100 TR[5oe2?]5J]nJ6gMTXG[3
+!s85 0
+!i10b 1
+!i103 1
+!s101 -O0
+vnetwork_packet_s_logger
+R1
+Z126 DXx4 work 27 net_packet_logger_s_sv_unit 0 22 >@fP^Y0ONG[n<cPJaClQ41
+Z127 VPlgif>=;4=jBTE<GHm7GV1
+r1
+31
+Z128 I06M0]RN6iQWck7O5def^a0
+S1
+R5
+R6
+R120
+R121
+L0 8
+R9
+R122
+R123
+R124
+R13
+Z129 !s100 [fNK>71RM?76[dgGTCKdm2
+Z130 !s105 net_packet_logger_s_sv_unit
+!s85 0
+!i10b 1
+!s101 -O0
+vreg_file
+R1
+Z131 IHHRkEXX=<OTn;B4`<74bQ2
+Z132 VD74VOFVKJXa3lQF`;:Obz1
+S1
+R5
+R6
+Z133 8Z:/My_Projects/CSE141L/core/lab1/reg_file.sv
+Z134 FZ:/My_Projects/CSE141L/core/lab1/reg_file.sv
+L0 2
+R9
+r1
+31
+R13
+Z135 !s100 Q8Jj6aFZ=PhClPHUdVG]b3
+Z136 !s105 reg_file_sv_unit
+Z137 !s108 1444809938.463000
+Z138 !s107 Z:/My_Projects/CSE141L/core/lab1/reg_file.sv|
+Z139 !s90 -reportprogress|300|-work|work|-sv|Z:/My_Projects/CSE141L/core/lab1/reg_file.sv|
+!i10b 1
+!s85 0
+!s101 -O0

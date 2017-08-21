@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Apr 14 15:37:15 2016
+Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+Revision Name : adder
+Top-level Entity Name : adder
+Family : Cyclone IV E
+Device : EP4CE40F29C6
+Timing Models : Final
+Total logic elements : 194 / 39,600 ( < 1 % )
+    Total combinational functions : 65 / 39,600 ( < 1 % )
+    Dedicated logic registers : 194 / 39,600 ( < 1 % )
+Total registers : 194
+Total pins : 195 / 533 ( 37 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,161,216 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 232 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
